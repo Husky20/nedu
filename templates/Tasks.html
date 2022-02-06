@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Priority</th>
+        </tr>
+        {% for getdata in TasksDetails %}
+        <tr>
+            <td>{{ getdata.id}}</td>
+            <td>{{ getdata.name }}</td>
+            <td>{{ getdata.priority }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
